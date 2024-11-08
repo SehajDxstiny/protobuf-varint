@@ -28,5 +28,5 @@ with_cont = [["0"] + list(byte) if idx == (len(groups) - 1) else ["1"] + list(by
 
 concat_bytes= "".join("".join(inner_array) for inner_array in with_cont)
 
-final = hex(int(''.join(with_cont), 2))
+final = hex(int(''.join(concat_bytes), 2))
 print(final)
